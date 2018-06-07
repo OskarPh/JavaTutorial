@@ -36,29 +36,33 @@ public class CardEnum {
         return rank;
     }
 
-    private boolean isValidRank(Rank rank) {
-        for(Rank r : Rank.values()) {
-            if (r == rank) return true;
-        }
+    public String toString() {
+        return rank + " of " + suit;
     }
 
-    private boolean isValidSuit(Suit suit) {
-        for(Suit s : Suit.values()) {
-            if (s == suit) return true;
-        }
-    }
+//    private boolean isValidRank(Rank rank) {
+//        for(Rank r : Rank.values()) {
+//            if (r == rank) return true;
+//        }
+//    }
+//
+//    private boolean isValidSuit(Suit suit) {
+//        for(Suit s : Suit.values()) {
+//            if (s == suit) return true;
+//        }
+//    }
 
-    public static Rank rankToString(Rank rank) {
-        for(Rank r : Rank.values()) {
-            if (r == rank) return r;
-        }
-    }
-
-    public static Suit suitToString(Suit suit) {
-        for(Suit s : Suit.values()) {
-            if (s == suit) return s;
-        }
-    }
+//    public static Rank rankToString(Rank rank) {
+//        for(Rank r : Rank.values()) {
+//            if (r == rank) return r;
+//        }
+//    }
+//
+//    public static Suit suitToString(Suit suit) {
+//        for(Suit s : Suit.values()) {
+//            if (s == suit) return s;
+//        }
+//    }
 
     public static void main(String[] args) {
         // must run program with -ea flag (java -ea ..) to
