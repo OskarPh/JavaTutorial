@@ -76,19 +76,47 @@ public class Hello {
 //            z = n - x * 100 - y * 10;
 //            System.out.println("In English: "+number[x] + " " + number[y] + " " + number[z]);
 //        }
-        System.out.println("System security interface:");
-        System.out.println(System.getSecurityManager());
-        // gets the value of the specified environment variable "PATH"
-        System.out.println("\nEnvironment variable PATH: ");
-        System.out.println(System.getenv("PATH"));
+//        System.out.println("System security interface:");
+//        System.out.println(System.getSecurityManager());
+//        // gets the value of the specified environment variable "PATH"
+//        System.out.println("\nEnvironment variable PATH: ");
+//        System.out.println(System.getenv("PATH"));
+//
+//        // gets the value of the specified environment variable "TEMP"
+//        System.out.println("\nEnvironment variable TEMP: ");
+//        System.out.println(System.getenv("TEMP"));
+//
+//        // gets the value of the specified environment variable "USERNAME"
+//        System.out.println("\nEnvironment variable USERNAME: ");
+//        System.out.println(System.getenv("USERNAME"));
 
-        // gets the value of the specified environment variable "TEMP"
-        System.out.println("\nEnvironment variable TEMP: ");
-        System.out.println(System.getenv("TEMP"));
+    /* Here we are intentionally assigning a null
+     * value to a reference so that the object becomes
+     * non reachable
+     */
+    String[] students = new String[10];
+    String studentName = "Peter Smith";
+    students[0] = studentName;
+    studentName = null;
 
-        // gets the value of the specified environment variable "USERNAME"
-        System.out.println("\nEnvironment variable USERNAME: ");
-        System.out.println(System.getenv("USERNAME"));
+    /* Here we are intentionally assigning reference a
+     * to the another reference b to make the object referenced
+     * by b unusable.
+     */
+    Hello[] a = new Hello[10];
+    a[0] = new Hello();
+    Hello b = new Hello();
+    for(int i = 0; i < a.length; i++) {
+        a[i] = null;
+    }
+//    a[0] = null;
+//    a[0] = b;
+//    b = null;
+    System.gc();
+}
+    protected void finalize() throws Throwable
+    {
+        System.out.println("Garbage collection is performed by JVM");
     }
 
 }

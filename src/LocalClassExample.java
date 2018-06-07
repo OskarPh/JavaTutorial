@@ -19,6 +19,7 @@ public class LocalClassExample {
                 // numberLength = 7;
                 String currentNumber = phoneNumber.replaceAll(
                         regularExpression, "");
+                System.out.println(currentNumber);
                 if (currentNumber.length() == numberLength)
                     formattedPhoneNumber = currentNumber;
                 else
