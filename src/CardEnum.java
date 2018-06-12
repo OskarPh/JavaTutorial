@@ -40,17 +40,23 @@ public class CardEnum {
         return rank + " of " + suit;
     }
 
-//    private boolean isValidRank(Rank rank) {
-//        for(Rank r : Rank.values()) {
-//            if (r == rank) return true;
-//        }
-//    }
-//
-//    private boolean isValidSuit(Suit suit) {
-//        for(Suit s : Suit.values()) {
-//            if (s == suit) return true;
-//        }
-//    }
+    private boolean isValidRank(Rank rank) {
+        for(Rank r : Rank.values()) {
+            if (r == rank)
+                return true;
+            System.out.println("true");
+        }
+        System.out.println("false");
+        return false;
+    }
+
+    private boolean isValidSuit(Suit suit) {
+        for(Suit s : Suit.values()) {
+            if (s == suit)
+                return true;
+        }
+        return false;
+    }
 
 //    public static Rank rankToString(Rank rank) {
 //        for(Rank r : Rank.values()) {
@@ -65,6 +71,11 @@ public class CardEnum {
 //    }
 
     public static void main(String[] args) {
+//        for(Rank r : Rank.values()) {
+//            System.out.println(r);
+//
+//        }
+        CardEnum n = new CardEnum(Rank.JACK, Suit.CLUBS);
         // must run program with -ea flag (java -ea ..) to
         // use assert statements
 //        assert rankToString(ACE) == "Ace";
