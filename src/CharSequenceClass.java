@@ -18,7 +18,7 @@ public class CharSequenceClass implements CharSequence {
     }
 
     public String toString() {
-        String ns;
+        String ns = "";
         for(int i = s.length() - 1; i >= 0; i--) {
             ns += s.charAt(i);
         }
