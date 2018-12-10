@@ -183,93 +183,102 @@ public class Solution {
 //            l=false;
 //        }
     // Zadanie 1
-        Owoc fruit = new Owoc("Banan");
-        fruit.wypisz();
+//        Owoc fruit = new Owoc("Banan");
+//        fruit.wypisz();
+//
+//    // Zadanie 2
+//        Dzem dzem1 = new Dzem("trustawkowy", 50);
+//        Dzem dzem2 = new Dzem("ananasowy");
+//        Dzem dzem3 = new Dzem( 20);
+//
+//    // Zadanie 3
+//        Sloik sloik1 = new Sloik(dzem1);
+//        Sloik sloik1a = new Sloik(new Dzem("jagodowy", 12));
+//        Sloik sloik2 = new Sloik(dzem2);
+//        Sloik sloik2a = new Sloik(new Dzem("malinowy"));
+//        Sloik sloik3 = new Sloik(dzem3);
+//        Sloik sloik3a = new Sloik(new Dzem(12));
+//    }
+//
+//
+//}
+//
+//// Zadanie 1
+//class Owoc {
+//    String nazwa;
+//    double waga = Math.random() * 0.3 + 0.5;
+//
+//    Owoc(String nazwa) {
+//        this.nazwa = nazwa;
+//    }
+//
+//    void wypisz() {
+//        System.out.println(this.nazwa + " waży " + this.waga);
+//    }
+//}
+//
+//// Zadanie 2
+//class Dzem {
+//    private String smak = "No name";
+//    private double waga = 100;
+//
+//    Dzem(String smak, double waga) {
+//        this.smak = smak;
+//        this.waga = waga;
+//    }
+//
+//    Dzem(String smak) {
+//        this(smak, 100);
+//    }
+//
+//    Dzem(double waga) {
+//        this("No name", waga);
+//    }
+//}
+//
+//// Zadanie 3
+//class Sloik {
+//    Dzem dzem;
+//    boolean czyOtwarty;
+//    Sloik(Dzem dzem) {
+//        otworz();
+//        this.dzem = dzem;
+//        zamknij();
+//    }
+//    void otworz() {
+//        // mozna by jeszcze sprawdzic czy jest obecnie zamkniety: if(!czyOtwarty) czyOtwarty = true;
+//        czyOtwarty = true;
+//    }
+//    void zamknij() {
+//        // mozna by jeszcze sprawdzic czy jest obecnie otwarty: if(czyOtwarty) czyOtwarty = false;
+//        czyOtwarty = false;
+//    }
+//}
+//
+//// Zadanie 4
+//class Fabryka{
+//    double stanKg = 0;
+//    void przyjmij(Owoc owoc) {
+//        this.stanKg += owoc.waga;
+//    }
+//
+//    Sloik[] robDzemy() {
+//        Sloik[] dzemy = new Sloik[10];
+//        if (stanKg >= 10) {
+//            for (int i = 0; i < dzemy.length; i++) {
+//                dzemy[i] = new Sloik(new Dzem(1));
+//            }
+//        }
+//        return dzemy;
+    Prostokat p = new Prostokat(10,11);
+    System.out.println(p.getBokA());
 
-    // Zadanie 2
-        Dzem dzem1 = new Dzem("trustawkowy", 50);
-        Dzem dzem2 = new Dzem("ananasowy");
-        Dzem dzem3 = new Dzem( 20);
+    Prostopadloscian pa = new Prostopadloscian(10, 12, 11);
+    System.out.println(pa.Pole());
 
-    // Zadanie 3
-        Sloik sloik1 = new Sloik(dzem1);
-        Sloik sloik1a = new Sloik(new Dzem("jagodowy", 12));
-        Sloik sloik2 = new Sloik(dzem2);
-        Sloik sloik2a = new Sloik(new Dzem("malinowy"));
-        Sloik sloik3 = new Sloik(dzem3);
-        Sloik sloik3a = new Sloik(new Dzem(12));
-    }
-
-
-}
-
-// Zadanie 1
-class Owoc {
-    String nazwa;
-    double waga = Math.random() * 0.3 + 0.5;
-
-    Owoc(String nazwa) {
-        this.nazwa = nazwa;
-    }
-
-    void wypisz() {
-        System.out.println(this.nazwa + " waży " + this.waga);
-    }
-}
-
-// Zadanie 2
-class Dzem {
-    private String smak = "No name";
-    private double waga = 100;
-
-    Dzem(String smak, double waga) {
-        this.smak = smak;
-        this.waga = waga;
-    }
-
-    Dzem(String smak) {
-        this(smak, 100);
-    }
-
-    Dzem(double waga) {
-        this("No name", waga);
-    }
-}
-
-// Zadanie 3
-class Sloik {
-    Dzem dzem;
-    boolean czyOtwarty;
-    Sloik(Dzem dzem) {
-        otworz();
-        this.dzem = dzem;
-        zamknij();
-    }
-    void otworz() {
-        // mozna by jeszcze sprawdzic czy jest obecnie zamkniety: if(!czyOtwarty) czyOtwarty = true;
-        czyOtwarty = true;
-    }
-    void zamknij() {
-        // mozna by jeszcze sprawdzic czy jest obecnie otwarty: if(czyOtwarty) czyOtwarty = false;
-        czyOtwarty = false;
-    }
-}
-
-// Zadanie 4
-class Fabryka{
-    double stanKg = 0;
-    void przyjmij(Owoc owoc) {
-        this.stanKg += owoc.waga;
-    }
-
-    Sloik[] robDzemy() {
-        Sloik[] dzemy = new Sloik[10];
-        if (stanKg >= 10) {
-            for (int i = 0; i < dzemy.length; i++) {
-                dzemy[i] = new Sloik(new Dzem(1));
-            }
-        }
-        return dzemy;
+    Prostopadloscian pa2 = new Prostopadloscian(p, 11);
+    System.out.println(pa2.Pole());
+    System.out.println(pa2.Objetosc());
     }
 
 }
