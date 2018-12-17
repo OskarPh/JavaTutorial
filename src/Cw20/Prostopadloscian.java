@@ -1,3 +1,5 @@
+package Cw20;
+
 public class Prostopadloscian extends Prostokat {
 
     private double wysokosc;

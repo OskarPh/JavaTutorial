@@ -1,3 +1,5 @@
+package Cw18;
+
 class Owoc {
     String nazwa;
     double waga = Math.random() * 0.3 + 0.5;

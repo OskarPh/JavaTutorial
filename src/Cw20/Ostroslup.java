@@ -1,3 +1,5 @@
+package Cw20;
+
 public class Ostroslup extends Trojkat {
 
     private double wysokosc;

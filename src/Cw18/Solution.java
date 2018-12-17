@@ -1,6 +1,4 @@
-import Cw18.Dzem;
-import Cw18.Owoc;
-import Cw18.Sloik;
+package Cw18;
 
 public class Solution {
 //    public static void kwadrat(int n, char znak) {

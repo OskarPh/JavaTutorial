@@ -1,3 +1,5 @@
+package Cw18;
+
 class Fabryka{
     double stanKg = 0;
     Sloik[] sloikiDzemu;

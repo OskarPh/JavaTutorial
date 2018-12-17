@@ -1,3 +1,5 @@
+package Cw20;
+
 public class Prostokat {
 
     private double bokA;

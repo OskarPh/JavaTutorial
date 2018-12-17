@@ -1,3 +1,5 @@
+package Cw18;
+
 class Sloik {
     Dzem dzem;
     boolean czyOtwarty;

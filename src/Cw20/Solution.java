@@ -1,3 +1,5 @@
+package Cw20;
+
 import Cw18.Dzem;
 import Cw18.Owoc;
 import Cw18.Sloik;

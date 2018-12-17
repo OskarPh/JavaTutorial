@@ -1,3 +1,5 @@
+package Cw18;
+
 class Dzem {
     private String smak = "No name";
     private double waga = 100;

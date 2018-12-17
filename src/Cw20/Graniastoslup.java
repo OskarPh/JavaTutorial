@@ -1,3 +1,5 @@
+package Cw20;
+
 public class Graniastoslup extends Trojkat {
 
     private double wysokosc;
