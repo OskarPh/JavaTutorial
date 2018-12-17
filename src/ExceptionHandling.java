@@ -59,6 +59,27 @@ public class ExceptionHandling {
         } catch (NumberFormatException e) {
             System.out.println(e);
         }
+
+        // Zadanie 3
+        Rakieta Miki = new Rakieta("Miki", 800);
+        try{
+            Miki.start();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        Miki.zatankuj();
+        try{
+            Miki.start();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        Miki.zatankuj();
+        try{
+            Miki.start();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        Miki.zatankuj();
     }
 
     public static void podniesArrayIndexOutOfBoundsException() throws ArrayIndexOutOfBoundsException {
