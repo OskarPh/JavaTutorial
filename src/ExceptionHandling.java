@@ -73,7 +73,7 @@ public class ExceptionHandling {
         throw new Exception("zla jednostka");
     }
 
-    public static int podajLiczbe(String nr) {
+    public static int podajLiczbe(String nr) throws NumberFormatException {
         String sysPart = nr.substring(0, 2);
         String sigPart = nr.substring(2, nr.length());
         System.out.println("Significant part " + sigPart);
@@ -89,7 +89,7 @@ public class ExceptionHandling {
                 res = hexToDec(sigPart);
         }
         else {
-            throw new NumberFormatException("Zly format liczby w systemie dwojkowym.");
+            throw new NumberFormatException("Zly format liczby");
         }
         return res;
     }
