@@ -270,15 +270,31 @@ public class Solution {
 //            }
 //        }
 //        return dzemy;
-    Prostokat p = new Prostokat(10,11);
-    System.out.println(p.getBokA());
+//    Prostokat p = new Prostokat(10,11);
+//    System.out.println(p.getBokA());
+//
+//    Prostopadloscian pa = new Prostopadloscian(10, 12, 11);
+//    System.out.println(pa.Pole());
+//
+//    Prostopadloscian pa2 = new Prostopadloscian(p, 11);
+//    System.out.println(pa2.Pole());
+//    System.out.println(pa2.Objetosc());
+        // Zadanie 1
+        Owoc fruit = new Owoc("Banan");
+        fruit.wypisz();
 
-    Prostopadloscian pa = new Prostopadloscian(10, 12, 11);
-    System.out.println(pa.Pole());
+        // Zadanie 2
+        Dzem dzem1 = new Dzem("trustawkowy", 50);
+        Dzem dzem2 = new Dzem("ananasowy");
+        Dzem dzem3 = new Dzem( 20);
 
-    Prostopadloscian pa2 = new Prostopadloscian(p, 11);
-    System.out.println(pa2.Pole());
-    System.out.println(pa2.Objetosc());
+        // Zadanie 3
+        Sloik sloik1 = new Sloik(dzem1);
+        Sloik sloik1a = new Sloik(new Dzem("jagodowy", 12));
+        Sloik sloik2 = new Sloik(dzem2);
+        Sloik sloik2a = new Sloik(new Dzem("malinowy"));
+        Sloik sloik3 = new Sloik(dzem3);
+        Sloik sloik3a = new Sloik(new Dzem(12));
+    }
     }
 
-}

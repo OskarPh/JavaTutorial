@@ -1,3 +1,5 @@
+package Cw20;
+
 public class DrzewoOwocowe extends DrzewoLisciaste {
     String nazwaOwoca;
 

@@ -1,3 +1,5 @@
+package Cw20;
+
 public class DrzewoLisciaste extends Drzewo {
     int ksztaltLiscia;
 

@@ -1,3 +1,5 @@
+package Cw20;
+
 public class DrzewoIglaste extends Drzewo {
     int iloscIgiel;
     double dlugoscSzyszki;

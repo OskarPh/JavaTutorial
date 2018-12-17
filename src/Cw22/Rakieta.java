@@ -1,3 +1,5 @@
+package Cw22;
+
 public class Rakieta {
     String nazwa;
     int wagaPaliwa;

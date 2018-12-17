@@ -1,3 +1,5 @@
+package Cw20;
+
 public class Drzewo {
     boolean wiecznieZielone;
     int wysokosc;
