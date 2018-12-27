@@ -11,7 +11,7 @@ public class DrzewoIglaste extends Drzewo {
     }
 
     public String toString(){
-        return wiecznieZielone + " " + wysokosc + " " + przekrojDrzewa + " " + iloscIgiel + " " + dlugoscSzyszki;
+        return super.toString() + " " + iloscIgiel + " " + dlugoscSzyszki;
     }
 }
 

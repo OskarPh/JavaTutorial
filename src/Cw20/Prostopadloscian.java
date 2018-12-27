@@ -3,8 +3,6 @@ package Cw20;
 public class Prostopadloscian extends Prostokat {
 
     private double wysokosc;
-//    private double bokA;
-//    private double bokB;
 
     public Prostopadloscian(double bokA, double bokB, double wysokosc) {
         super(bokA, bokB);

@@ -9,6 +9,6 @@ public class DrzewoOwocowe extends DrzewoLisciaste {
     }
 
     public String toString(){
-        return wiecznieZielone + " " + wysokosc + " " + przekrojDrzewa + " " + ksztaltLiscia + " " + nazwaOwoca;
+        return super.toString() + " " + nazwaOwoca;
     }
 }

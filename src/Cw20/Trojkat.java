@@ -3,11 +3,9 @@ package Cw20;
 public class Trojkat {
 
     private double podstawa;
-    //private double wysokosc;
 
-    public Trojkat(double podstawa) { //, double wysokosc) {
+    public Trojkat(double podstawa) {
         this.podstawa = podstawa;
-        //this.wysokosc = wysokosc;
     }
 
     public double getPodstawa() {
@@ -15,7 +13,6 @@ public class Trojkat {
     }
 
     public double Pole() {
-        return this.podstawa*this.podstawa*Math.sqrt(3) / 4;
-        //return podstawa * wysokosc / 2;
+        return Math.pow(this.podstawa, 2)*Math.sqrt(3) / 4;
     }
 }
